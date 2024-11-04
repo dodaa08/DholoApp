@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dholo</title>
+    <style>
+        /* Center the container and set responsive height */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            padding: 1rem;
+        }
+
+        /* Responsive video styling */
+        video {
+            max-width: 100%;
+            height: auto;
+            max-height: 500px;
+        }
+
+        /* Adjust height for larger screens */
+        @media (min-width: 768px) {
+            .video-container {
+                height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: black; color: wheat;">
+    <h1 style="text-align: center;">Welcome to Dholo</h1>
+    <div class="video-container">
+        <video src="dholo.mp4" muted controls></video>
+    </div>
+</body>
+</html>
